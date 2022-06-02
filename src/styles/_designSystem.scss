@@ -3,7 +3,7 @@
 $headFont: 'Bellefair', serif;
 
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 $subheadFont: 'Barlow Condensed', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
@@ -71,4 +71,5 @@ body {
 .nav-text {
   font-size: $nav-text;
   letter-spacing: $nav-text-spacing;
+  font-family: $subheadFont;
 }

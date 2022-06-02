@@ -1,0 +1,50 @@
+.navbar {
+  margin-top: 2rem;
+  margin-right: 0;
+  .nav-brand {
+    margin: 2rem;
+  }
+
+  .nav-toggler {
+    color: $light-color;
+  }
+  .collapse {
+    .nav {
+      padding: 25px 6rem;
+      margin-right: 0;
+      background: hsl(0, 0%, 100%, 0.75);
+      backdrop-filter: blur(30px);
+      .nav-item {
+        background: hsl(0, 0%, 100%, 0);
+        .nav-text {
+          background: hsl(0, 0%, 100%, 0);
+          color: $light-color;
+          font-weight: 400;
+          padding-right: 0.75rem;
+          span {
+            background: hsl(0, 0%, 100%, 0);
+            font-weight: 700;
+            padding-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    .collapse {
+      .nav {
+        inset: 0 0 0 32%;
+        padding: 8rem 2rem;
+        position: fixed;
+        background: hsl(0, 0%, 100%, 0.75);
+
+        .nav-item {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
