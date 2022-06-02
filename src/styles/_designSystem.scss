@@ -1,0 +1,74 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+$headFont: 'Bellefair', serif;
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+$subheadFont: 'Barlow Condensed', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+$contentFont: 'Barlow', sans-serif;
+
+// COLORS
+$dark-color:#0B0D17;
+$medium-color:#D0D6F9;
+$light-color:#FFFFFF;
+
+// TYPOGRAPHY
+// headers
+$head-1: 150px;
+$head-2: 100px;
+$head-3: 55px;
+$head-4: 32px;
+$head-5: 28px;
+$head-5-spacing: 4.75px;
+// subheaders
+$subhead-1: 28px;
+$subhead-2: 14px;
+$subhead-2-spacing: 2.35px;
+// nav text
+$nav-text: 16px;
+$nav-text-spacing: 2.7px;
+// body text
+$body-text: 18px;
+
+
+body {
+  font-family: $contentFont;
+  font-size: $body-text;
+}
+
+// UTILS
+.heading {
+  font-family: $headFont;
+} 
+.subheading {
+  font-family: $subheadFont;
+} 
+.heading-1 {
+  font-size: $head-1;
+}
+.heading-2 {
+  font-size:$head-2;
+}
+.heading-3 {
+  font-size:$head-3;
+}
+.heading-4 {
+  font-size:$head-4;
+}
+.heading-5 {
+  font-size:$head-5;
+  letter-spacing: $head-5-spacing;
+}
+.subheading-1 {
+  font-size: $subhead-1;
+}
+.subheading-2 {
+  font-size: $subhead-2;
+  letter-spacing: $subhead-2-spacing;
+}
+.nav-text {
+  font-size: $nav-text;
+  letter-spacing: $nav-text-spacing;
+}
