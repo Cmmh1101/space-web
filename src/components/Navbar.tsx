@@ -34,12 +34,12 @@ const MainNavbar = () => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/" className='nav-text subheading'>
+          <NavLink href="../views/crew.tsx" className='nav-text subheading'>
             <span className='fw-bolder'>02</span> CREW
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/" className='nav-text subheading'>
+          <NavLink href="../views/technology.tsx" className='nav-text subheading'>
             <span className='fw-bolder'>03</span> TECHNOLOGY
           </NavLink>
         </NavItem>
