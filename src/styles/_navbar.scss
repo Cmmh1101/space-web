@@ -1,20 +1,17 @@
 .navbar {
+  display: flex;
   .container-fluid {
     padding: 0;
     margin: 0;
   }
-
   .nav-brand {
     margin: 2rem;
   }
-
   .line {
-    height: 1px;
-    position: relative;
-    background: red;
+    border-top: 1px solid #979797;
     width: 100%;
-    max-width: 33rem;
-    margin-right: -2.5rem;
+    margin-left: 2rem;
+    margin-right: -2rem;
     z-index: 2;
   }
   .nav-toggler {
@@ -22,7 +19,11 @@
     margin-right: 2.5rem;
   }
   .collapse {
+    display: flex;
+    flex-direction: row;
     .nav {
+      display: flex;
+      flex-direction: row;
       padding: 25px 6rem;
       min-width: 6rem;
       background: hsl(0, 0%, 100%, 0.1);
@@ -33,7 +34,7 @@
           background: hsl(0, 0%, 100%, 0);
           color: $light-color;
           font-weight: 400;
-          padding-right: 0.75rem;
+          padding-right: 2rem;
           span {
             background: hsl(0, 0%, 100%, 0);
             font-weight: 700;

@@ -21,7 +21,7 @@ const MainNavbar = () => {
       <NavbarBrand href='/' className='nav-brand'>
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
-      <hr className='line d-sm-none d-lg-block ' />
+      <div className='line d-none d-lg-block'></div>
       <NavbarToggler onClick={toggle} className='nav-toggler'>
         <img src='../../assets/shared/icon-hamburger.svg' alt='toggler' />
       </NavbarToggler>
