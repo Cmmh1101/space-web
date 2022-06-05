@@ -37,8 +37,8 @@ const MainNavbar = () => {
         navbarIsOpen={navbarIsOpen}
         className='collapse  '
       >
-        <Nav className='nav justify-content-md-end' navbar>
-          <NavItem>
+        <Nav className='nav justify-content-md-end ' navbar>
+          <NavItem className='nav-item '>
             <NavLink href='/' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>00</span> HOME
             </NavLink>
