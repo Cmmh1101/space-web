@@ -1,11 +1,13 @@
 .navbar {
   display: flex;
+
   .container-fluid {
-    padding: 0;
-    margin: 0;
+    padding-right: 0;
+    padding-top: 0;
   }
   .nav-brand {
-    margin: 2rem;
+    margin: 1.5rem;
+    justify-content: flex-start;
   }
   .line {
     border-top: 1px solid #979797;
@@ -14,18 +16,27 @@
     margin-right: -2rem;
     z-index: 2;
   }
-  .nav-toggler {
+  .navbar-toggler {
     color: $light-color;
-    margin-right: 2.5rem;
+    position: absolute;
+    top: 34px;
+    right: 26px;
+    z-index: 2;
+    border: none;
+    &:hover,
+    :focus {
+      border: none;
+    }
   }
+
   .collapse {
     display: flex;
-    flex-direction: row;
     .nav {
       display: flex;
       flex-direction: row;
-      padding: 25px 6rem;
-      min-width: 6rem;
+      justify-content: center;
+      padding: 25px 6.5rem;
+      flex-wrap: nowrap;
       background: hsl(0, 0%, 100%, 0.1);
       backdrop-filter: blur(30px);
       .nav-item {
@@ -46,18 +57,53 @@
   }
 }
 
-@media (max-width: 768px) {
+// Mobile
+@media (max-width: 767px) {
   .navbar {
     .collapse {
       .nav {
-        inset: 0 0 0 32%;
-        padding: 8rem 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        inset: 0 0 0 35%;
+        padding-left: 2.5rem;
+        padding-top: 8rem;
         position: fixed;
         background: hsl(0, 0%, 100%, 0.1);
 
         .nav-item {
           padding-bottom: 1rem;
         }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 991px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-brand {
+      position: absolute;
+      top: -5px;
+      left: 15px;
+    }
+    .collapse {
+      justify-content: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .navbar {
+    .collapse {
+      .nav {
       }
     }
   }
