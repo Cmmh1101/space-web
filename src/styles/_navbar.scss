@@ -1,6 +1,8 @@
 .navbar {
   display: flex;
-
+  background: transparent;
+  z-index: 5;
+  position: fixed;
   .container-fluid {
     padding-right: 0;
     padding-top: 0;
@@ -38,11 +40,11 @@
       padding-right: 6.5rem;
       padding-left: 6.5rem;
       flex-wrap: nowrap;
-      background: hsl(0, 0%, 100%, 0.1);
-      backdrop-filter: blur(30px);
+      background: hsl(0, 0%, 0%, 0.5);
+      backdrop-filter: blur(2px);
       .nav-item {
         display: inline-block;
-        background: hsl(0, 0%, 100%, 0);
+        // background: hsl(0, 0%, 0%, 0.5);
         justify-content: center;
         padding-top: 25px;
         padding-bottom: 25px;
@@ -51,7 +53,7 @@
         }
         .nav-text {
           display: inline-block;
-          background: hsl(0, 0%, 100%, 0);
+          // background: hsl(0, 0%, 0%, 0.5);
           color: $light-color;
           justify-content: center;
           font-weight: 400;
@@ -59,7 +61,7 @@
           padding-left: 1rem;
 
           span {
-            background: hsl(0, 0%, 100%, 0);
+            // background: hsl(0, 0%, 0%, 0.5);
             font-weight: 700;
             padding-right: 4px;
           }
@@ -81,7 +83,7 @@
         padding-left: 2.5rem;
         padding-top: 8rem;
         position: fixed;
-        background: hsl(0, 0%, 100%, 0.1);
+        // background: hsl(0, 0%, 0%, 0.5);
         border: none;
         .nav-item {
           padding-bottom: 1rem;

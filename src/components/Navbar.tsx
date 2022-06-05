@@ -19,7 +19,7 @@ const MainNavbar = () => {
   };
 
   return (
-    <Navbar expand='md' className='navbar' dark>
+    <Navbar color='light' expand='md' className='navbar '>
       <NavbarBrand href='/' className='nav-brand'>
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
