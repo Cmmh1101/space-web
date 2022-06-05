@@ -1,6 +1,12 @@
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
-export default Home
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
+};
+export default Home;
