@@ -19,7 +19,7 @@ const MainNavbar = () => {
   };
 
   return (
-    <Navbar color='light' expand='md' className='navbar '>
+    <Navbar expand='md' className='navbar navbar-dark'>
       <NavbarBrand href='/' className='nav-brand'>
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
@@ -32,6 +32,7 @@ const MainNavbar = () => {
         )}
       </NavbarToggler>
       <Collapse
+        dark
         navbar
         isOpen={isOpen}
         navbarIsOpen={navbarIsOpen}

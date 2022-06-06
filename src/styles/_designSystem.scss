@@ -10,9 +10,9 @@ $subheadFont: 'Barlow Condensed', sans-serif;
 $contentFont: 'Barlow', sans-serif;
 
 // COLORS
-$dark-color:#0B0D17;
-$medium-color:#D0D6F9;
-$light-color:#FFFFFF;
+$dark-color: #0b0d17;
+$medium-color: #d0d6f9;
+$light-color: #ffffff;
 
 // TYPOGRAPHY
 // headers
@@ -32,7 +32,6 @@ $nav-text-spacing: 2.7px;
 // body text
 $body-text: 18px;
 
-
 body {
   font-family: $contentFont;
   font-size: $body-text;
@@ -41,25 +40,29 @@ body {
 // UTILS
 .heading {
   font-family: $headFont;
-} 
+}
 .subheading {
   font-family: $subheadFont;
-} 
+}
 .heading-1 {
   font-size: $head-1;
+  font-family: $headFont;
+  color: $light-color;
 }
 .heading-2 {
-  font-size:$head-2;
+  font-size: $head-2;
 }
 .heading-3 {
-  font-size:$head-3;
+  font-size: $head-3;
 }
 .heading-4 {
-  font-size:$head-4;
+  font-size: $head-4;
 }
 .heading-5 {
-  font-size:$head-5;
+  font-size: $head-5;
   letter-spacing: $head-5-spacing;
+  font-family: $subheadFont;
+  color: $medium-color;
 }
 .subheading-1 {
   font-size: $subhead-1;
