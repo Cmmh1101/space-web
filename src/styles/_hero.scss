@@ -1,4 +1,99 @@
 .hero {
-  background-image: url(../../public/assets/home/background-home-desktop.jpg);
-  background-position: center center;
+  background: url('../../public/assets/home/background-home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .heading-1 {
+        font-size: 80px;
+      }
+      p {
+        color: $medium-color;
+        max-width: 400px;
+      }
+    }
+    .hero-btn {
+      color: $dark-color;
+      background-color: $light-color;
+      font-family: $headFont;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .hero {
+    background: url('../../public/assets/home/background-home-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .overlay {
+      .hero-text {
+        .heading-1 {
+          font-size: $head-1;
+        }
+        p {
+          max-width: 450px;
+        }
+      }
+      .hero-btn {
+        height: 242px;
+        width: 242px;
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .hero {
+    background: url('../../public/assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .overlay {
+      // max-width: 1100px;
+
+      flex-direction: row;
+      // align-items: center;
+      justify-content: space-between;
+
+      .hero-text {
+        display: flex;
+        text-align: start;
+        justify-content: left;
+        align-items: flex-start;
+        .heading-1 {
+          font-size: $head-1;
+        }
+        p {
+          max-width: 440px !important;
+        }
+      }
+      .hero-btn {
+        height: 274px;
+        width: 274px;
+      }
+    }
+  }
 }

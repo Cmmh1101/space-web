@@ -3,10 +3,9 @@ import Hero from '../components/Hero';
 
 const Home = () => {
   return (
-    <>
-      <Navbar />
+    <div className='hero'>
       <Hero />
-    </>
+    </div>
   );
 };
 export default Home;
