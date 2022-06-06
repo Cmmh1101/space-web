@@ -22,6 +22,7 @@ $head-3: 55px;
 $head-4: 32px;
 $head-5: 28px;
 $head-5-spacing: 4.75px;
+$head-mobile: 80px;
 // subheaders
 $subhead-1: 28px;
 $subhead-2: 14px;
@@ -47,10 +48,10 @@ body {
   font-family: $subheadFont;
 }
 .heading-1 {
-  font-size: $head-1;
   font-family: $headFont;
   color: $light-color;
 }
+
 .heading-2 {
   font-size: $head-2;
 }

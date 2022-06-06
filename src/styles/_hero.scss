@@ -13,11 +13,17 @@
     text-align: center;
     height: 100vh;
     .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       .heading-1 {
         font-size: 80px;
       }
       p {
         color: $medium-color;
+        max-width: 400px;
       }
     }
     .hero-btn {
@@ -35,12 +41,26 @@
 }
 
 // Tablet
-@media (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .hero {
     background: url('../../public/assets/home/background-home-tablet.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    .overlay {
+      .hero-text {
+        .heading-1 {
+          font-size: $head-1;
+        }
+        p {
+          max-width: 450px;
+        }
+      }
+      .hero-btn {
+        height: 242px;
+        width: 242px;
+      }
+    }
   }
 }
 
@@ -52,11 +72,27 @@
     background-position: center;
     background-size: cover;
     .overlay {
+      // max-width: 1100px;
+
       flex-direction: row;
+      // align-items: center;
       justify-content: space-between;
-      text-align: start;
-      p {
-        max-width: 480px;
+
+      .hero-text {
+        display: flex;
+        text-align: start;
+        justify-content: left;
+        align-items: flex-start;
+        .heading-1 {
+          font-size: $head-1;
+        }
+        p {
+          max-width: 440px !important;
+        }
+      }
+      .hero-btn {
+        height: 274px;
+        width: 274px;
       }
     }
   }
