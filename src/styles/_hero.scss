@@ -7,11 +7,12 @@
   top: 0;
   left: 0;
   .text-content {
-    width: 450px;
     margin-top: 387px;
     margin-left: 165px;
     p {
       color: $medium-color;
+      max-width: 850px;
+      line-height: $p-line-height;
     }
   }
 }
