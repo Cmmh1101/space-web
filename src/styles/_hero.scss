@@ -26,24 +26,24 @@
         max-width: 400px;
       }
     }
-    .hero-btn {
-      color: $dark-color;
-      background-color: $light-color;
-      font-family: $headFont;
-      height: 150px;
-      width: 150px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  }
+  .hero-btn {
+    color: $dark-color;
+    background-color: $light-color;
+    font-family: $headFont;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      a,
-      a:hover,
-      a:focus,
-      a:active {
-        text-decoration: none;
-        color: inherit;
-      }
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: none;
+      color: inherit;
     }
   }
 }
@@ -64,10 +64,10 @@
           max-width: 450px;
         }
       }
-      .hero-btn {
-        height: 242px;
-        width: 242px;
-      }
+    }
+    .hero-btn {
+      height: 242px;
+      width: 242px;
     }
   }
 }
@@ -98,10 +98,10 @@
           max-width: 440px !important;
         }
       }
-      .hero-btn {
-        height: 274px;
-        width: 274px;
-      }
+    }
+    .hero-btn {
+      height: 274px;
+      width: 274px;
     }
   }
 }
