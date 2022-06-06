@@ -32,7 +32,6 @@ const MainNavbar = () => {
         )}
       </NavbarToggler>
       <Collapse
-        dark
         navbar
         isOpen={isOpen}
         navbarIsOpen={navbarIsOpen}

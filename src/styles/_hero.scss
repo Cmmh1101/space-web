@@ -1,18 +1,63 @@
 .hero {
-  background: url('../../public/assets/home/background-home-desktop.jpg')
-    no-repeat center center/cover;
+  background: url('../../public/assets/home/background-home-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  top: 0;
-  left: 0;
-  .text-content {
-    margin-top: 387px;
-    margin-left: 165px;
-    p {
-      color: $medium-color;
-      max-width: 850px;
-      line-height: $p-line-height;
+
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    .hero-text {
+      .heading-1 {
+        font-size: 80px;
+      }
+      p {
+        color: $medium-color;
+      }
+    }
+    .hero-btn {
+      color: $dark-color;
+      background-color: $light-color;
+      font-family: $headFont;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// Tablet
+@media (max-width: 991px) {
+  .hero {
+    background: url('../../public/assets/home/background-home-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .hero {
+    background: url('../../public/assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .overlay {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: start;
+      p {
+        max-width: 480px;
+      }
     }
   }
 }
