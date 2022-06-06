@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
+
 const Hero = () => {
   return (
     <div className='hero px-5'>
@@ -14,7 +17,9 @@ const Hero = () => {
             world experience!
           </p>
         </article>
-        <article className='hero-btn text-uppercase mt-5'>Explore</article>
+        <Button className='btn hero-btn text-uppercase mt-5'>
+          <Link to='/destination'>Explore</Link>
+        </Button>
       </div>
     </div>
   );
