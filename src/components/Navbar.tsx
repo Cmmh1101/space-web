@@ -19,7 +19,7 @@ const MainNavbar = () => {
   };
 
   return (
-    <Navbar expand='md' className='navbar navbar-dark'>
+    <Navbar expand='md' className='navbar w-screen mx-auto bg-dark'>
       <NavbarBrand href='/' className='nav-brand'>
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
@@ -44,20 +44,17 @@ const MainNavbar = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink
-              href='../views/destination.tsx'
-              className='nav-text d-flex'
-            >
+            <NavLink href='/destination' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>01</span> DESTINATION
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='../views/crew.tsx' className='nav-text d-flex'>
+            <NavLink href='/crew' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>02</span> CREW
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='../views/technology.tsx' className='nav-text d-flex'>
+            <NavLink href='/technology' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>03</span> TECHNOLOGY
             </NavLink>
           </NavItem>
