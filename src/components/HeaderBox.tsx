@@ -1,5 +1,5 @@
 interface Props {
-  head5: string;
+  head5?: string;
   head1: string;
   content: string;
 }

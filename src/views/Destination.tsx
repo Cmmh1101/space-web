@@ -1,14 +1,15 @@
-import { Navbar, Nav, NavLink, NavItem } from 'reactstrap';
+import SecondaryNavbar from '../components/SecondaryNavbar';
 
 const Destination = () => {
   return (
-    <Navbar>
-      <Nav className='me-auto' navbar>
-        <NavItem>
-          <NavLink href='/components/'>Components</NavLink>
-        </NavItem>
-      </Nav>
-    </Navbar>
+    <div className='destination'>
+      <div className='secondary-navbar'>
+        <SecondaryNavbar url='/moon' destination='Moon' />
+        <SecondaryNavbar url='/mars' destination='Mars' />
+        <SecondaryNavbar url='/europa' destination='Europa' />
+        <SecondaryNavbar url='/titan' destination='Titan' />
+      </div>
+    </div>
   );
 };
 export default Destination;
