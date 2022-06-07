@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +16,10 @@
   .header-box {
     margin-top: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    .head3 {
+    .heading-3 {
       font-size: $head-3;
       color: $light-color;
       font-family: $headFont;
@@ -36,5 +37,30 @@
     border-top: 1px solid $medium-color;
     width: 340px;
     opacity: 0.3;
+  }
+  .distance {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .destination {
+    .header-box {
+      .heading-3 {
+        font-size: 80px;
+      }
+      .content {
+        max-width: 595px;
+      }
+    }
+    .line {
+      width: 580px;
+    }
+    .distance {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }

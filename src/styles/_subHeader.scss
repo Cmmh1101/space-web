@@ -17,10 +17,37 @@
     span {
       opacity: 40%;
       margin-right: 1.5rem;
+      justify-content: center;
     }
   }
   img {
     height: 170px;
     width: 170px;
+  }
+}
+
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .subHeader {
+    .head5 {
+      margin-top: 2rem;
+      font-size: $subhead-3;
+      justify-content: left;
+      text-align: left;
+      align-items: start;
+    }
+    img {
+      height: 300px;
+      width: 300px;
+      justify-content: center;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .subHeader {
+    .head5 {
+    }
   }
 }

@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Home from './views/Home';
-// import Destination from './views/Destination';
+import Destination from './views/Destination';
 import Moon from './views/destination/Moon';
 import Mars from './views/destination/Mars';
 import Europa from './views/destination/Europa';
@@ -19,7 +19,7 @@ function App() {
           <main className='main'>
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/destination' element={<Moon />} />
+              <Route path='/destination' element={<Destination />} />
               <Route path='/moon' element={<Moon />} />
               <Route path='/mars' element={<Mars />} />
               <Route path='/europa' element={<Europa />} />

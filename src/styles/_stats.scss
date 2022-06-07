@@ -14,3 +14,10 @@
     padding-bottom: 25px;
   }
 }
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .stats {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}

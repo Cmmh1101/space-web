@@ -21,17 +21,19 @@ const Destination = () => {
         <SecondaryNavbar url='/titan' destination='Titan' />
       </div>
       <div className='header-box'>
-        <HeaderBox
-          head3={'Moon'}
-          // customClass={'heading-3'}
-          content={
-            'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.'
-          }
-        />
+        <div className='heading-3 text-uppercase'>Moon</div>
+        <p className='content'>
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
       </div>
       <div className='line'></div>
-      <Stats subhead2={'Avg. Distance'} figures={'384,400 km'} />
-      <Stats subhead2={'Est. Travel Time'} figures={'3 Days'} />
+      <div className='distance'>
+        <Stats subhead2={'Avg. Distance'} figures={'384,400 km'} />
+        <Stats subhead2={'Est. Travel Time'} figures={'3 Days'} />
+      </div>
     </div>
   );
 };
