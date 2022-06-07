@@ -1,0 +1,16 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  .subheading-2 {
+    font-family: $subheadFont;
+    color: $medium-color;
+    padding-bottom: 8px;
+  }
+  .heading-1 {
+    font-size: $head-5;
+    padding-bottom: 25px;
+  }
+}

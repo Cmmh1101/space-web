@@ -1,7 +1,7 @@
-import HeaderBox from '../components/HeaderBox';
-import SecondaryNavbar from '../components/SecondaryNavbar';
-import SubHeader from '../components/SubHeader';
-import Stats from '../components/Stats';
+import HeaderBox from '../../components/HeaderBox';
+import SecondaryNavbar from '../../components/SecondaryNavbar';
+import SubHeader from '../../components/SubHeader';
+import Stats from '../../components/Stats';
 
 const Destination = () => {
   return (
@@ -10,7 +10,7 @@ const Destination = () => {
         <SubHeader
           num={'01'}
           text={'Pick your destination'}
-          image={'../../assets/destination/image-moon.png'}
+          image={'../../assets/destination/image-mars.png'}
         />
       </div>
 
@@ -22,16 +22,16 @@ const Destination = () => {
       </div>
       <div className='header-box'>
         <HeaderBox
-          head3={'Moon'}
+          head3={'Mars'}
           // customClass={'heading-3'}
           content={
-            'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.'
+            'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!'
           }
         />
       </div>
       <div className='line'></div>
-      <Stats subhead2={'Avg. Distance'} figures={'384,400 km'} />
-      <Stats subhead2={'Est. Travel Time'} figures={'3 Days'} />
+      <Stats subhead2={'Avg. Distance'} figures={'225 mil. km'} />
+      <Stats subhead2={'Est. Travel Time'} figures={'9 months'} />
     </div>
   );
 };
