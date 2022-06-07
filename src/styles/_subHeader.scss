@@ -1,0 +1,10 @@
+.head5 {
+  color: $light-color;
+  display: flex;
+  justify-content: center;
+  font-size: $nav-text;
+  span {
+    opacity: 25%;
+    margin-right: 1.5rem;
+  }
+}

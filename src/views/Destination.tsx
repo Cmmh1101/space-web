@@ -1,8 +1,10 @@
 import SecondaryNavbar from '../components/SecondaryNavbar';
+import SubHeader from '../components/SubHeader';
 
 const Destination = () => {
   return (
     <div className='destination'>
+      <SubHeader num={'01'} text={'Pick your destination'} />
       <div className='secondary-navbar'>
         <SecondaryNavbar url='/moon' destination='Moon' />
         <SecondaryNavbar url='/mars' destination='Mars' />
