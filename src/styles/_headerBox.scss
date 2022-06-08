@@ -1,0 +1,47 @@
+.header-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .heading-1 {
+    font-size: 80px;
+  }
+  .content {
+    color: $medium-color;
+    max-width: 400px;
+  }
+}
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .header-box {
+    .heading-5 {
+      font-size: $head-5;
+    }
+    .heading-1 {
+      font-size: $head-1;
+    }
+    p {
+      max-width: 450px;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .header-box {
+    display: flex;
+    text-align: start;
+    justify-content: left;
+    align-items: flex-start;
+    .heading-1 {
+      font-size: $head-1;
+    }
+
+    p {
+      min-width: 400px !important;
+      max-width: 600px !important;
+    }
+  }
+}

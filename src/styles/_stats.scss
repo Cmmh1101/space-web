@@ -1,0 +1,51 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 18px;
+  .subheading-2 {
+    font-family: $subheadFont;
+    color: $medium-color;
+    padding-bottom: 8px;
+  }
+  .heading-1 {
+    font-size: $head-5;
+    padding-bottom: 25px;
+  }
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .stats {
+    justify-content: center;
+    align-items: center;
+  }
+}
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .stats {
+    margin-right: 60px;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .stats {
+    margin-right: 5rem;
+    justify-content: left;
+    text-align: left;
+    .subheading-2 {
+      margin-left: 0;
+      justify-content: left;
+      text-align: left;
+    }
+    .heading-1 {
+      margin-left: 0;
+      justify-content: left;
+      text-align: left;
+    }
+  }
+}

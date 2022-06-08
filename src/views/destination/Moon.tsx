@@ -1,12 +1,12 @@
-import HeaderBox from '../components/HeaderBox';
-import SecondaryNavbar from '../components/SecondaryNavbar';
-import SubHeader from '../components/SubHeader';
-import Stats from '../components/Stats';
+import HeaderBox from '../../components/HeaderBox';
+import SecondaryNavbar from '../../components/SecondaryNavbar';
+import SubHeader from '../../components/SubHeader';
+import Stats from '../../components/Stats';
 
 const Destination = () => {
   return (
     <div className='destination'>
-      <div className='col col-lg-6 sub-header '>
+      <div className='col col-lg-6 sub-header'>
         <SubHeader
           num={'01'}
           text={'Pick your destination'}

@@ -1,16 +1,16 @@
-import HeaderBox from '../components/HeaderBox';
-import SecondaryNavbar from '../components/SecondaryNavbar';
-import SubHeader from '../components/SubHeader';
-import Stats from '../components/Stats';
+import HeaderBox from '../../components/HeaderBox';
+import SecondaryNavbar from '../../components/SecondaryNavbar';
+import SubHeader from '../../components/SubHeader';
+import Stats from '../../components/Stats';
 
 const Destination = () => {
   return (
     <div className='destination'>
-      <div className='col col-lg-6 sub-header '>
+      <div className='col col-lg-6 sub-header'>
         <SubHeader
           num={'01'}
           text={'Pick your destination'}
-          image={'../../assets/destination/image-moon.png'}
+          image={'../../assets/destination/image-titan.png'}
         />
       </div>
       <div className='col col-lg-6 destination-content'>
@@ -22,17 +22,17 @@ const Destination = () => {
         </div>
         <div className='header-box'>
           <HeaderBox
-            head3={'Moon'}
+            head3={'Titan'}
             // customClass={'heading-3'}
             content={
-              'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.'
+              'The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.'
             }
           />
         </div>
         <div className='line'></div>
         <div className='distance'>
-          <Stats subhead2={'Avg. Distance'} figures={'384,400 km'} />
-          <Stats subhead2={'Est. Travel Time'} figures={'3 Days'} />
+          <Stats subhead2={'Avg. Distance'} figures={'1.6 bil. km'} />
+          <Stats subhead2={'Est. Travel Time'} figures={'7 years'} />
         </div>
       </div>
     </div>

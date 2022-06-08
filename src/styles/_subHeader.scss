@@ -1,0 +1,72 @@
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  .head5 {
+    color: $light-color;
+    font-size: $nav-text;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    span {
+      opacity: 40%;
+      margin-right: 1.5rem;
+    }
+  }
+  .planet {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    img {
+      height: 170px;
+      width: 170px;
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .subHeader {
+    .head5 {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      font-size: $subhead-3;
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
+      text-align: start;
+    }
+    .planet {
+      img {
+        margin-top: 1rem;
+        height: 300px;
+        width: 300px;
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .subHeader {
+    height: 100vh;
+    margin-top: 8rem;
+
+    .head5 {
+      display: flex;
+      justify-content: left;
+      margin-left: 5.5rem;
+    }
+    .planet {
+      img {
+        margin-top: 3rem;
+        height: 445px;
+        width: 445px;
+      }
+    }
+  }
+}
