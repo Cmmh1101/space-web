@@ -70,9 +70,10 @@
 @media (min-width: 992px) {
   .destination {
     flex-direction: row;
+    justify-content: space-between;
 
     .destination-content {
-      margin-left: 3rem;
+      margin-left: 7rem;
       margin-top: -12rem;
       display: flex;
       flex-direction: column;
