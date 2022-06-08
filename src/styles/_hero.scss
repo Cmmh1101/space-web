@@ -12,20 +12,6 @@
     align-items: center;
     text-align: center;
     height: 100vh;
-    .hero-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      .heading-1 {
-        font-size: 80px;
-      }
-      .content {
-        color: $medium-color;
-        max-width: 400px;
-      }
-    }
   }
   .hero-btn {
     color: $dark-color;
@@ -56,14 +42,6 @@
     background-position: center;
     background-size: cover;
     .overlay {
-      .hero-text {
-        .heading-1 {
-          font-size: $head-1;
-        }
-        p {
-          max-width: 450px;
-        }
-      }
     }
     .hero-btn {
       height: 242px;
@@ -85,19 +63,6 @@
       flex-direction: row;
       // align-items: center;
       justify-content: space-between;
-
-      .hero-text {
-        display: flex;
-        text-align: start;
-        justify-content: left;
-        align-items: flex-start;
-        .heading-1 {
-          font-size: $head-1;
-        }
-        p {
-          max-width: 440px !important;
-        }
-      }
     }
     .hero-btn {
       height: 274px;
