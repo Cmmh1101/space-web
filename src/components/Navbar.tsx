@@ -11,11 +11,11 @@ import {
 
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbarIsOpen, setNavbarIsOpen] = useState(false);
+  // const [navbarIsOpen, setNavbarIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
-    setNavbarIsOpen(!navbarIsOpen);
+    // setNavbarIsOpen(!navbarIsOpen);
   };
 
   return (
@@ -34,7 +34,7 @@ const MainNavbar = () => {
       <Collapse
         navbar
         isOpen={isOpen}
-        navbarIsOpen={navbarIsOpen}
+        // navbarIsOpen={navbarIsOpen}
         className='collapse  '
       >
         <Nav className='nav justify-content-md-end ' navbar>

@@ -7,11 +7,10 @@ const Destination = () => {
   return (
     <div className='destination'>
       <div className='col col-lg-6 sub-header'>
-        <SubHeader
-          num={'01'}
-          text={'Pick your destination'}
-          image={'../../assets/destination/image-europa.png'}
-        />
+        <SubHeader num={'01'} text={'Pick your destination'} />
+        <div className='image'>
+          <img src='../../assets/destination/image-europa.png' />
+        </div>
       </div>
       <div className='col col-lg-6 destination-content'>
         <div className='secondary-navbar'>

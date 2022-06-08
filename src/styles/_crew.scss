@@ -1,0 +1,13 @@
+.crew {
+  background: url('../../public/assets/crew/background-crew-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  .sub-header {
+    img {
+      height: 223px;
+    }
+  }
+}
