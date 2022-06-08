@@ -1,4 +1,11 @@
 .secondary-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .active {
+    box-shadow: inset 0 -2px 0 0 $light-color;
+    color: $light-color;
+  }
   .nav {
     .nav-item {
       .subheading {
@@ -18,6 +25,20 @@
         &:active {
           box-shadow: inset 0 -2px 0 0 $light-color;
           color: $light-color;
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .secondary-navbar {
+    .nav {
+      .nav-item {
+        .subheading {
+          margin-left: 0;
+          margin-right: 2rem;
         }
       }
     }

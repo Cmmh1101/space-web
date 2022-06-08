@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
   .heading-1 {
     font-size: 80px;
   }
@@ -26,10 +27,6 @@
     }
   }
 }
-.hero-btn {
-  height: 242px;
-  width: 242px;
-}
 
 // Desktop
 @media (min-width: 992px) {
@@ -41,12 +38,10 @@
     .heading-1 {
       font-size: $head-1;
     }
+
     p {
-      max-width: 440px !important;
+      min-width: 400px !important;
+      max-width: 600px !important;
     }
   }
-}
-.hero-btn {
-  height: 274px;
-  width: 274px;
 }

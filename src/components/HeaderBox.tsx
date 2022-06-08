@@ -17,6 +17,4 @@ const HeaderBox = ({ head5, head1, content, head3 }: Props) => {
   );
 };
 
-// Scss in hero.scss
-
 export default HeaderBox;
