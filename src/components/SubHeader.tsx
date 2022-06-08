@@ -10,7 +10,7 @@ const SubHeader = ({ num, text, image }: Props) => {
       <div className='head5 heading-5 text-uppercase'>
         <span>{num}</span> {text}
       </div>
-      <div>
+      <div className='planet'>
         <img src={image}></img>
       </div>
     </div>
