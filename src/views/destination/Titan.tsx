@@ -30,8 +30,10 @@ const Destination = () => {
         />
       </div>
       <div className='line'></div>
-      <Stats subhead2={'Avg. Distance'} figures={'1.6 bil. km'} />
-      <Stats subhead2={'Est. Travel Time'} figures={'7 years'} />
+      <div className='distance'>
+        <Stats subhead2={'Avg. Distance'} figures={'1.6 bil. km'} />
+        <Stats subhead2={'Est. Travel Time'} figures={'7 years'} />
+      </div>
     </div>
   );
 };

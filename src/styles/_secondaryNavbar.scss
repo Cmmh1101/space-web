@@ -6,16 +6,18 @@
         text-decoration: none;
         margin-right: 1rem;
         margin-left: 1rem;
-        color: $light-color;
+        color: $medium-color;
         text-transform: uppercase;
         display: inline-block;
         justify-content: center;
         padding-top: 7px;
         padding-bottom: 7px;
-        &:hover,
-        :active,
-        :focus {
+        &:hover {
+          box-shadow: inset 0 -2px 0 0 $medium-color;
+        }
+        &:active {
           box-shadow: inset 0 -2px 0 0 $light-color;
+          color: $light-color;
         }
       }
     }
