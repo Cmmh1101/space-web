@@ -27,6 +27,7 @@ $head-mobile: 80px;
 $subhead-1: 28px;
 $subhead-2: 14px;
 $subhead-3: 20px;
+$subhead-4: 24px;
 $subhead-2-spacing: 2.35px;
 // nav text
 $nav-text: 16px;
@@ -74,6 +75,19 @@ body {
 .subheading-2 {
   font-size: $subhead-2;
   letter-spacing: $subhead-2-spacing;
+}
+.subheading-4 {
+  font-size: $nav-text;
+  font-family: $headFont;
+  color: $light-color;
+  opacity: 0.5;
+}
+.subheading-5 {
+  font-size: $subhead-4;
+  font-family: $headFont;
+  color: $light-color;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 .nav-text {
   font-size: $nav-text;

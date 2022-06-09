@@ -6,8 +6,42 @@
   display: flex;
   flex-direction: column;
   .sub-header {
-    img {
-      height: 223px;
+    .image {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-top: -2rem;
+      img {
+        // width: 327px;
+        height: 223px;
+      }
+      .line {
+        margin-bottom: 1rem;
+        width: 327px;
+        // margin-left: auto;
+        // margin-right: auto;
+        border-top: 1px solid $medium-color;
+
+        opacity: 0.3;
+      }
+    }
+  }
+  .crew-content {
+    .header-box {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 3rem;
+      .content {
+        color: $medium-color;
+        max-width: 327px;
+        line-height: 26px;
+        font-size: 15px;
+      }
     }
   }
 }

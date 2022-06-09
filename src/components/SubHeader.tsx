@@ -1,8 +1,6 @@
 interface Props {
   num: string;
   text: string;
-  image?: string;
-  height?: any;
 }
 
 const SubHeader = ({ num, text }: Props) => {
