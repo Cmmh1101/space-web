@@ -7,12 +7,12 @@ interface Props {
   customClass?: string;
 }
 
-const SecondaryNavbar = ({ destination, url, customClass }: Props) => {
+const SecondaryNavbar = ({ destination, url }: Props) => {
   return (
     <div className='secondary-navbar'>
       <Nav pills className='nav'>
         <NavItem className='nav-item'>
-          <NavLink to={url} className='subheading subheading-2 {customClass}'>
+          <NavLink to={url} className='subheading subheading-2'>
             {destination}
           </NavLink>
         </NavItem>

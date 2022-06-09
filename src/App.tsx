@@ -6,6 +6,10 @@ import Mars from './views/destination/Mars';
 import Europa from './views/destination/Europa';
 import Titan from './views/destination/Titan';
 import Crew from './views/Crew';
+import Commander from './views/crew/Commander';
+import FlightEngineer from './views/crew/FlightEngineer';
+import MissionSpecialist from './views/crew/MissionSpecialist';
+import Pilot from './views/crew/Pilot';
 import Technology from './views/Technology';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from 'reactstrap';
@@ -25,6 +29,14 @@ function App() {
               <Route path='/europa' element={<Europa />} />
               <Route path='/titan' element={<Titan />} />
               <Route path='/crew' element={<Crew />} />
+              <Route path='/commander' element={<Commander />} />
+              <Route path='/flightEngineer' element={<FlightEngineer />} />
+              <Route
+                path='/missionSpecialist'
+                element={<MissionSpecialist />}
+              />
+              <Route path='/pilot' element={<Pilot />} />
+
               <Route path='/technology' element={<Technology />} />
             </Routes>
           </main>

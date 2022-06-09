@@ -4,8 +4,10 @@
   background-position: center;
   background-size: cover;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   .sub-header {
+    margin-bottom: -8rem;
     .image {
       display: flex;
       flex-direction: column;
@@ -14,21 +16,19 @@
       align-items: center;
       margin-top: -2rem;
       img {
-        // width: 327px;
         height: 223px;
+        width: auto;
       }
       .line {
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
         width: 327px;
-        // margin-left: auto;
-        // margin-right: auto;
         border-top: 1px solid $medium-color;
-
         opacity: 0.3;
       }
     }
   }
   .crew-content {
+    z-index: 0;
     .header-box {
       margin-top: 1rem;
       display: flex;
