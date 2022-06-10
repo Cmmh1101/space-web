@@ -1,0 +1,41 @@
+.technology {
+  background: url('../../public/assets/technology/background-technology-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .sub-header {
+  }
+  .technology-body {
+    .image {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 1rem;
+      margin-bottom: 30px;
+
+      img {
+        min-height: 200px;
+        width: 100%;
+      }
+    }
+    .header-box {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 3rem;
+      .content {
+        // color: $medium-color;
+        max-width: 327px;
+        line-height: 26px;
+        font-size: 15px;
+      }
+    }
+  }
+}

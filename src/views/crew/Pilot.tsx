@@ -2,7 +2,7 @@ import SubHeader from '../../components/SubHeader';
 import DotNavbar from '../../components/DotNavbar';
 import HeaderBox from '../../components/HeaderBox';
 
-const Crew = () => {
+const Pilot = () => {
   return (
     <div className='crew'>
       <div className='col col-lg-6 sub-header '>
@@ -35,4 +35,4 @@ const Crew = () => {
     </div>
   );
 };
-export default Crew;
+export default Pilot;

@@ -10,10 +10,7 @@ const Crew = () => {
       </div>
       <div className='crew-body'>
         <div className='image'>
-          <img
-            src='../../assets/crew/image-douglas-hurley.webp'
-            style={{ height: '712px' }}
-          />
+          <img src='../../assets/crew/image-douglas-hurley.webp' />
           <div className='line'></div>
         </div>
 
