@@ -51,9 +51,23 @@
 @media (min-width: 769px) and (max-width: 991px) {
   .crew {
     .crew-body {
-      // flex-direction: column-reverse;
-      .line {
-        display: none;
+      display: flex;
+      flex-direction: column-reverse;
+      .image {
+        .line {
+          display: none;
+        }
+      }
+      .crew-content {
+        display: flex;
+        flex-direction: column-reverse;
+        .dot-navbar {
+          margin-bottom: 1.5rem;
+          margin-top: 0.5rem;
+        }
+        .header-box {
+          margin-bottom: 0;
+        }
       }
     }
   }
