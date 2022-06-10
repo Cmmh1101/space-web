@@ -10,7 +10,14 @@ const LaunchVehicle = () => {
       </div>
       <div className='technology-body'>
         <div className='image'>
-          <img src='../../assets/technology/image-launch-vehicle-landscape.jpg' />
+          <img
+            className='tec-image-1'
+            src='../../assets/technology/image-launch-vehicle-landscape.jpg'
+          />
+          <img
+            className='tec-image-2'
+            src='../../assets/technology/image-launch-vehicle-portrait.jpg'
+          />
         </div>
 
         <div className='col col-lg-5 technology-content'>

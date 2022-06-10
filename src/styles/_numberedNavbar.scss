@@ -16,6 +16,11 @@
       border-radius: 50%;
       font-family: $headFont;
       &:hover {
+        color: $light-color;
+        background-color: $dark-color;
+        border: 1px solid $light-color;
+      }
+      &:active {
         color: $dark-color;
         background-color: $light-color;
       }
@@ -30,8 +35,24 @@
       .nav-item {
         height: 60px;
         width: 60px;
-        padding: 14px 16px;
+        padding: 14px 22px;
         font-size: $subhead-4;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .num-navbar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    .nav {
+      .nav-item {
+        height: 80px;
+        width: 80px;
+        font-size: $head-4;
+        padding: 14px 16px;
       }
     }
   }

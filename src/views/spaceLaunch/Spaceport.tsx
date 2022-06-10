@@ -10,7 +10,14 @@ const Spaceport = () => {
       </div>
       <div className='technology-body'>
         <div className='image'>
-          <img src='../../assets/technology/image-spaceport-landscape.jpg' />
+          <img
+            className='tec-image-1'
+            src='../../assets/technology/image-spaceport-landscape.jpg'
+          />
+          <img
+            className='tec-image-2'
+            src='../../assets/technology/image-spaceport-portrait.jpg'
+          />
         </div>
 
         <div className='col col-lg-5 technology-content'>

@@ -10,7 +10,14 @@ const SpaceCapsule = () => {
       </div>
       <div className='technology-body'>
         <div className='image'>
-          <img src='../../assets/technology/image-space-capsule-landscape.jpg' />
+          <img
+            className='tec-image-1'
+            src='../../assets/technology/image-space-capsule-landscape.jpg'
+          />
+          <img
+            className='tec-image-2'
+            src='../../assets/technology/image-space-capsule-portrait.jpg'
+          />
         </div>
 
         <div className='col col-lg-5 technology-content'>
