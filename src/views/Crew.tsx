@@ -5,16 +5,19 @@ import HeaderBox from '../components/HeaderBox';
 const Crew = () => {
   return (
     <div className='crew'>
-      <div className='col col-lg-6 sub-header '>
+      <div className='col col-lg-5 sub-header '>
         <SubHeader num={'02'} text={'Meet your crew'} />
       </div>
       <div className='crew-body'>
         <div className='image'>
-          <img src='../../assets/crew/image-douglas-hurley.webp' />
+          <img
+            src='../../assets/crew/image-douglas-hurley.webp'
+            style={{ height: '712px' }}
+          />
           <div className='line'></div>
         </div>
 
-        <div className='col col-lg-6 crew-content'>
+        <div className='col col-lg-5 crew-content'>
           <div className='dot-navbar'>
             <DotNavbar url='/commander' />
             <DotNavbar url='/flightEngineer' />
@@ -22,7 +25,7 @@ const Crew = () => {
             <DotNavbar url='/pilot' />
           </div>
 
-          <div className='header-box'>
+          <div className='col-lg-5 header-box'>
             <HeaderBox
               subhead4='Commander'
               subhead5={'Douglas Hurley'}

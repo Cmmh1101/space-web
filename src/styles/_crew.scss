@@ -12,7 +12,6 @@
     .image {
       display: flex;
       flex-direction: column;
-      // justify-content: start;
       text-align: center;
       align-items: center;
 
@@ -72,6 +71,49 @@
             line-height: 26px;
           }
         }
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .crew {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .crew-body {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .image {
+        position: absolute;
+        bottom: 0;
+        img {
+          height: 712px;
+        }
+        :right img {
+          position: absolute;
+          bottom: 0;
+        }
+        .line {
+          display: none;
+        }
+      }
+    }
+    .crew-content {
+      position: absolute;
+      left: 6rem;
+      top: 25rem;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      // justify-content: center;
+      text-align: left;
+      .header-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
       }
     }
   }
