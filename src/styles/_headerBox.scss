@@ -35,13 +35,21 @@
     text-align: start;
     justify-content: left;
     align-items: flex-start;
+    min-width: 370px !important;
     .heading-1 {
       font-size: $head-1;
+      display: flex;
+      text-align: start;
+      justify-content: left;
+      align-items: flex-start;
     }
 
     p {
-      min-width: 400px !important;
       max-width: 600px !important;
+      display: flex;
+      text-align: start;
+      justify-content: left;
+      align-items: flex-start;
     }
   }
 }

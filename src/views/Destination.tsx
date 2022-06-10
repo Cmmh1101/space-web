@@ -7,11 +7,10 @@ const Destination = () => {
   return (
     <div className='destination'>
       <div className='col col-lg-6 sub-header '>
-        <SubHeader
-          num={'01'}
-          text={'Pick your destination'}
-          image={'../../assets/destination/image-moon.png'}
-        />
+        <SubHeader num={'01'} text={'Pick your destination'} />
+        <div className='image'>
+          <img src='../../assets/destination/image-moon.png' />
+        </div>
       </div>
       <div className='col col-lg-6 destination-content'>
         <div className='secondary-navbar'>
@@ -23,7 +22,6 @@ const Destination = () => {
         <div className='header-box'>
           <HeaderBox
             head3={'Moon'}
-            // customClass={'heading-3'}
             content={
               'See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.'
             }
