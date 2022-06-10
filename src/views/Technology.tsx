@@ -1,7 +1,4 @@
-import DotNavbar from '../components/DotNavbar';
 import HeaderBox from '../components/HeaderBox';
-import SecondaryNavbar from '../components/SecondaryNavbar';
-import Stats from '../components/Stats';
 import SubHeader from '../components/SubHeader';
 import NumberedNavbar from '../components/NumberedNavbar';
 
