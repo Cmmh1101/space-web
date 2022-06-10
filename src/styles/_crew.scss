@@ -67,6 +67,10 @@
         }
         .header-box {
           margin-bottom: 0;
+          .content {
+            max-width: 327px;
+            line-height: 26px;
+          }
         }
       }
     }
