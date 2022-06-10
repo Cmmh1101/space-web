@@ -1,0 +1,123 @@
+.technology {
+  background: url('../../public/assets/technology/background-technology-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .sub-header {
+  }
+  .technology-body {
+    .image {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 1rem;
+      margin-bottom: 30px;
+
+      .tec-image-1 {
+        min-height: 200px;
+        width: 100%;
+      }
+      .tec-image-2 {
+        display: none;
+      }
+    }
+    .header-box {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 3rem;
+      .content {
+        max-width: 315px;
+        line-height: 26px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .technology {
+    background: url('../../public/assets/technology/background-technology-tablet.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    .technology-body {
+      margin-top: 2rem;
+      .image {
+        min-width: 991px;
+        overflow: hidden;
+        .tec-image-1 {
+          width: 991px;
+          max-height: 310px;
+          object-fit: cover;
+        }
+      }
+
+      .header-box {
+        .content {
+          max-width: 440px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .technology {
+    background: url('../../public/assets/technology/background-technology-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .sub-header {
+    }
+    .technology-body {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      overflow: hidden;
+      .image {
+        .tec-image-1 {
+          display: none;
+          overflow: hidden;
+        }
+        .tec-image-2 {
+          margin-top: 2rem;
+          display: flex;
+          height: 527px;
+          width: 515px;
+        }
+      }
+    }
+    .technology-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      text-align: left;
+      margin-left: 8rem;
+      .header-box {
+        margin-top: 3.8rem;
+        min-width: 444px;
+
+        .subhead5 {
+          font-size: $head-3;
+          min-width: 470px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+        }
+      }
+    }
+  }
+}

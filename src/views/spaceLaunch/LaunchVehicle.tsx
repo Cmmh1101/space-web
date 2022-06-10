@@ -1,8 +1,8 @@
-import HeaderBox from '../components/HeaderBox';
-import SubHeader from '../components/SubHeader';
-import NumberedNavbar from '../components/NumberedNavbar';
+import HeaderBox from '../../components/HeaderBox';
+import NumberedNavbar from '../../components/NumberedNavbar';
+import SubHeader from '../../components/SubHeader';
 
-const Technology = () => {
+const LaunchVehicle = () => {
   return (
     <div className='technology'>
       <div className='col col-lg-6 sub-header '>
@@ -41,4 +41,4 @@ const Technology = () => {
     </div>
   );
 };
-export default Technology;
+export default LaunchVehicle;

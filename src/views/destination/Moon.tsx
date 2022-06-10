@@ -3,7 +3,7 @@ import SecondaryNavbar from '../../components/SecondaryNavbar';
 import SubHeader from '../../components/SubHeader';
 import Stats from '../../components/Stats';
 
-const Destination = () => {
+const Moon = () => {
   return (
     <div className='destination'>
       <div className='col col-lg-6 sub-header'>
@@ -37,4 +37,4 @@ const Destination = () => {
     </div>
   );
 };
-export default Destination;
+export default Moon;

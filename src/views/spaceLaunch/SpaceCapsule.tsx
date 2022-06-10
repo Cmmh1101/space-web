@@ -1,8 +1,8 @@
-import HeaderBox from '../components/HeaderBox';
-import SubHeader from '../components/SubHeader';
-import NumberedNavbar from '../components/NumberedNavbar';
+import HeaderBox from '../../components/HeaderBox';
+import NumberedNavbar from '../../components/NumberedNavbar';
+import SubHeader from '../../components/SubHeader';
 
-const Technology = () => {
+const SpaceCapsule = () => {
   return (
     <div className='technology'>
       <div className='col col-lg-6 sub-header '>
@@ -12,11 +12,11 @@ const Technology = () => {
         <div className='image'>
           <img
             className='tec-image-1'
-            src='../../assets/technology/image-launch-vehicle-landscape.jpg'
+            src='../../assets/technology/image-space-capsule-landscape.jpg'
           />
           <img
             className='tec-image-2'
-            src='../../assets/technology/image-launch-vehicle-portrait.jpg'
+            src='../../assets/technology/image-space-capsule-portrait.jpg'
           />
         </div>
 
@@ -30,9 +30,9 @@ const Technology = () => {
           <div className='col-lg-5 header-box'>
             <HeaderBox
               subhead4='The Terminology...'
-              subhead5={'Launch Vehicle'}
+              subhead5={'Space Capsule'}
               content={
-                "  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+                "  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where  you'll spend your time during the flight. It includes a space gym, cinema,  and plenty of other activities to keep you entertained."
               }
             />
           </div>
@@ -41,4 +41,4 @@ const Technology = () => {
     </div>
   );
 };
-export default Technology;
+export default SpaceCapsule;
