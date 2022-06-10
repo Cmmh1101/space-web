@@ -1,0 +1,30 @@
+.num-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // position: relative;
+  .nav {
+    // display: flex;
+    // flex-direction: row;
+    .nav-item {
+      // position: absolute;
+      // display: inline;
+      // align-items: center;
+      text-decoration: none;
+      color: $light-color;
+      background-color: $dark-color;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 50%;
+      font-family: $headFont;
+      &:hover {
+        color: $dark-color;
+        background-color: $light-color;
+      }
+    }
+  }
+}

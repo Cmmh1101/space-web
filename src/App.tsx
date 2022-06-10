@@ -13,6 +13,9 @@ import Pilot from './views/crew/Pilot';
 import Technology from './views/Technology';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from 'reactstrap';
+import LaunchVehicle from './views/spaceLaunch/LaunchVehicle';
+import SpaceCapsule from './views/spaceLaunch/SpaceCapsule';
+import Spaceport from './views/spaceLaunch/Spaceport';
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
               <Route path='/pilot' element={<Pilot />} />
 
               <Route path='/technology' element={<Technology />} />
+              <Route path='/launchVehicle' element={<LaunchVehicle />} />
+              <Route path='/spaceport' element={<Spaceport />} />
+              <Route path='/spaceCapsule' element={<SpaceCapsule />} />
             </Routes>
           </main>
         </Container>

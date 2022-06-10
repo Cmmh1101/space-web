@@ -3,6 +3,7 @@ import HeaderBox from '../components/HeaderBox';
 import SecondaryNavbar from '../components/SecondaryNavbar';
 import Stats from '../components/Stats';
 import SubHeader from '../components/SubHeader';
+import NumberedNavbar from '../components/NumberedNavbar';
 
 const Technology = () => {
   return (
@@ -16,11 +17,10 @@ const Technology = () => {
         </div>
 
         <div className='col col-lg-5 technology-content'>
-          <div className='dot-navbar'>
-            <DotNavbar url='/commander' />
-            <DotNavbar url='/flightEngineer' />
-            <DotNavbar url='/missionSpecialist' />
-            <DotNavbar url='/pilot' />
+          <div className='num-navbar'>
+            <NumberedNavbar url='/launchVehicle' number={1} />
+            <NumberedNavbar url='/spacePort' number={2} />
+            <NumberedNavbar url='/spaceCapsule' number={3} />
           </div>
 
           <div className='col-lg-5 header-box'>
