@@ -22,3 +22,17 @@
     }
   }
 }
+
+// Tablet
+@media (min-width: 769px) and (max-width: 991px) {
+  .num-navbar {
+    .nav {
+      .nav-item {
+        height: 60px;
+        width: 60px;
+        padding: 14px 16px;
+        font-size: $subhead-4;
+      }
+    }
+  }
+}
