@@ -5,9 +5,9 @@ import {
   NavbarToggler,
   Collapse,
   Nav,
-  NavLink,
   NavItem,
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,22 +39,22 @@ const MainNavbar = () => {
       >
         <Nav className='nav justify-content-md-end ' navbar>
           <NavItem className='nav-item '>
-            <NavLink href='/' className='nav-text d-flex'>
+            <NavLink to='/' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>00</span> HOME
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='/destination' className='nav-text d-flex'>
+            <NavLink to='/destination' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>01</span> DESTINATION
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='/crew' className='nav-text d-flex'>
+            <NavLink to='/crew' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>02</span> CREW
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href='/technology' className='nav-text d-flex'>
+            <NavLink to='/technology' className='nav-text d-flex'>
               <span className='d-md-none d-lg-block '>03</span> TECHNOLOGY
             </NavLink>
           </NavItem>
