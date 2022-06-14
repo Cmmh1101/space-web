@@ -49,6 +49,7 @@
 // Tablet
 @media (min-width: 769px) and (max-width: 991px) {
   .crew {
+    background: url('../../public/assets/crew/background-crew-tablet.jpg');
     .crew-body {
       display: flex;
       flex-direction: column-reverse;
@@ -79,6 +80,7 @@
 // Desktop
 @media (min-width: 992px) {
   .crew {
+    background: url('../../public/assets/crew/background-crew-desktop.jpg');
     padding-left: 2rem;
     padding-right: 2rem;
     .crew-body {

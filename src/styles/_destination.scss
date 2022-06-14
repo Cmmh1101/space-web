@@ -1,8 +1,9 @@
 .destination {
-  background: url('../../public/assets/destination/background-destination-mobile.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url('../../public/assets/destination/background-destination-mobile.jpg')
+    no-repeat center/cover;
+  // background-repeat: ;
+  // background-position: ;
+  // background-size: cover;
   display: flex;
   flex-direction: column;
   .sub-header {
@@ -57,6 +58,7 @@
 // Tablet
 @media (min-width: 769px) and (max-width: 991px) {
   .destination {
+    background: url('../../public/assets/destination/background-destination-tablet.jpg');
     .sub-header {
       .image {
         img {
@@ -89,6 +91,7 @@
 // Desktop
 @media (min-width: 992px) {
   .destination {
+    background: url('../../public/assets/destination/background-destination-desktop.jpg');
     height: 100vh;
     flex-direction: row;
     .sub-header {

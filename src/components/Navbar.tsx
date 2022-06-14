@@ -11,15 +11,13 @@ import { NavLink } from 'react-router-dom';
 
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [navbarIsOpen, setNavbarIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
-    // setNavbarIsOpen(!navbarIsOpen);
   };
 
   return (
-    <Navbar expand='md' className='navbar w-screen mx-auto bg-dark'>
+    <Navbar expand='md' className='navbar w-screen mx-auto '>
       <NavbarBrand href='/' className='nav-brand'>
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
@@ -31,12 +29,7 @@ const MainNavbar = () => {
           <img src='../../assets/shared/icon-hamburger.svg' />
         )}
       </NavbarToggler>
-      <Collapse
-        navbar
-        isOpen={isOpen}
-        // navbarIsOpen={navbarIsOpen}
-        className='collapse  '
-      >
+      <Collapse navbar isOpen={isOpen} className='collapse  '>
         <Nav className='nav justify-content-md-end ' navbar>
           <NavItem className='nav-item '>
             <NavLink to='/' className='nav-text d-flex'>

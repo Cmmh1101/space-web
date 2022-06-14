@@ -1,0 +1,33 @@
+.mainNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  .logo {
+  }
+  .nav {
+    .nav-text {
+      text-decoration: none;
+      &.active {
+      }
+    }
+  }
+}
+// Desktop
+@media (min-width: 992px) {
+  .mainNavbar {
+    .nav {
+      .nav {
+        background: hsla(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(5px);
+        .nav-text {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
