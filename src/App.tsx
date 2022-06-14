@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import MainNavbar from './components/Navbar';
 import Home from './views/Home';
 import Destination from './views/Destination';
 import Moon from './views/destination/Moon';
@@ -22,7 +22,8 @@ function App() {
     <div className='App'>
       <Router>
         <Container fluid className='p-0 m-0'>
-          <Navbar />
+          {/* <Navbar /> */}
+          <MainNavbar />
           <main className='main'>
             <Routes>
               <Route path='/' element={<Home />} />

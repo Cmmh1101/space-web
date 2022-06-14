@@ -9,7 +9,7 @@ const Europa = () => {
       <div className='col col-lg-6 sub-header'>
         <SubHeader num={'01'} text={'Pick your destination'} />
         <div className='image'>
-          <img src='../../assets/destination/image-europa.png' />
+          <img src='../assets/destination/image-europa.png' />
         </div>
       </div>
       <div className='col col-lg-6 destination-content'>

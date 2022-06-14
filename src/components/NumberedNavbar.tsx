@@ -1,4 +1,4 @@
-import { Nav } from 'reactstrap';
+import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 interface Props {
@@ -10,9 +10,11 @@ const NumberedNavbar = ({ url, number }: Props) => {
   return (
     <div className='num-navbar'>
       <Nav pills className='nav'>
-        <NavLink to={url} className='nav-item'>
-          {number}
-        </NavLink>
+        <NavItem className='nav-item'>
+          <NavLink to={url} className='heading'>
+            {number}
+          </NavLink>
+        </NavItem>
       </Nav>
     </div>
   );

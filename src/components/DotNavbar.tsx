@@ -1,4 +1,4 @@
-import { Nav } from 'reactstrap';
+import { Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 interface Props {
@@ -9,7 +9,9 @@ const DotNavbar = ({ url }: Props) => {
   return (
     <div className='dot-navbar'>
       <Nav pills className='nav'>
-        <NavLink to={url} className='nav-item'></NavLink>
+        <NavItem className='nav-item'>
+          <NavLink to={url} className='dot'></NavLink>
+        </NavItem>
       </Nav>
     </div>
   );
