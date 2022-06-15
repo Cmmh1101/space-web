@@ -7,6 +7,7 @@
   flex-direction: column;
   height: 100vh;
   .sub-header {
+    // margin-top: 2rem;
   }
   .technology-body {
     .image {
@@ -80,6 +81,7 @@
     background-size: cover;
     overflow: hidden;
     .sub-header {
+      margin-top: 3rem;
     }
     .technology-body {
       display: flex;

@@ -15,7 +15,7 @@ const Commander = () => {
         </div>
         <div className='col col-lg-6 crew-content'>
           <div className='dot-navbar'>
-            <DotNavbar url='/commander' />
+          <DotNavbar url='/commander' />
             <DotNavbar url='/flightEngineer' />
             <DotNavbar url='/missionSpecialist' />
             <DotNavbar url='/pilot' />
