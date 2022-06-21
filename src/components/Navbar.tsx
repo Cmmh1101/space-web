@@ -16,8 +16,12 @@ const MainNavbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+  }
+
   return (
-    <Navbar expand='md' className='navbar w-screen mx-auto '>
+    <Navbar expand='md' className='navbar w-screen mx-auto ' >
       <NavbarBrand href='/' className='nav-brand'>
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
@@ -32,22 +36,22 @@ const MainNavbar = () => {
       <Collapse navbar isOpen={isOpen} className='collapse  '>
         <Nav className='nav justify-content-md-end ' navbar>
           <NavItem  >
-            <NavLink to='/' className=  'nav-text d-flex'  onClick={toggleNavbar}  >
+            <NavLink to='/' className=  'nav-text d-flex' onClick={closeNavbar}  >
               <span className='d-md-none d-lg-block '>00</span> HOME
             </NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink to='/destination' className='nav-text d-flex' onClick={toggleNavbar}>
+          <NavItem >
+            <NavLink to='/destination' className='nav-text d-flex' onClick={closeNavbar} >
               <span className='d-md-none d-lg-block '>01</span> DESTINATION
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='/crew' className='nav-text d-flex' onClick={toggleNavbar}>
+            <NavLink to='/crew' className='nav-text d-flex' onClick={closeNavbar}>
               <span className='d-md-none d-lg-block '>02</span> CREW
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='/technology' className='nav-text d-flex' onClick={toggleNavbar}> 
+            <NavLink to='/technology' className='nav-text d-flex' onClick={closeNavbar}> 
               <span className='d-md-none d-lg-block '>03</span> TECHNOLOGY
             </NavLink>
           </NavItem>
