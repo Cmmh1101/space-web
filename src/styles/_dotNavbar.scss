@@ -6,11 +6,11 @@
 
   .nav {
     .nav-item {
-  
-      .dot-nav {
+      a.dot-nav {
         cursor: pointer;
-        padding-right: 6px;
-        padding-left: 6px;
+        padding-right: 10px;
+        font-size: 10px;
+        color: $light-color;
         border-radius: 50%;
         margin-right: 12px;
         margin-left: 12px;
@@ -19,6 +19,19 @@
         &:hover,
         &.active {
           opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .dot-navbar {
+    .nav{
+      .nav-item {
+        a.dot-nav {
+          padding-right: 15px;
+          font-size: 15px;
         }
       }
     }
