@@ -32,7 +32,7 @@ const MainNavbar = () => {
       <Collapse navbar isOpen={isOpen} className='collapse  '>
         <Nav className='nav justify-content-md-end ' navbar>
           <NavItem  onClick={toggleNavbar} className='nav-item'>
-            <NavLink to='/' className= {({isActive}) => isActive ? 'nav-text d-flex active' : 'nav-text d-flex'  }   >
+            <NavLink to='/' className=  'nav-text d-flex'    >
               <span className='d-md-none d-lg-block '>00</span> HOME
             </NavLink>
           </NavItem>
