@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom';
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
+  const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
@@ -22,7 +22,7 @@ const MainNavbar = () => {
         <img src='../../assets/shared/logo.svg' alt='logo' />
       </NavbarBrand>
       <div className='line d-none d-lg-block'></div>
-      <NavbarToggler onClick={toggle} className='navbar-toggler'>
+      <NavbarToggler onClick={toggleNavbar} className='navbar-toggler'>
         {isOpen ? (
           <img src='../../assets/shared/icon-close.svg' />
         ) : (
@@ -31,23 +31,23 @@ const MainNavbar = () => {
       </NavbarToggler>
       <Collapse navbar isOpen={isOpen} className='collapse  '>
         <Nav className='nav justify-content-md-end ' navbar>
-          <NavItem className='nav-item '>
-            <NavLink to='/' className='nav-text d-flex'>
+          <NavItem  onClick={toggleNavbar} className='nav-item'>
+            <NavLink to='/' className= {({isActive}) => isActive ? 'nav-text d-flex active' : 'nav-text d-flex'  }   >
               <span className='d-md-none d-lg-block '>00</span> HOME
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='/destination' className='nav-text d-flex'>
+            <NavLink to='/destination' className='nav-text d-flex' onClick={toggleNavbar}>
               <span className='d-md-none d-lg-block '>01</span> DESTINATION
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='/crew' className='nav-text d-flex'>
+            <NavLink to='/crew' className='nav-text d-flex' onClick={toggleNavbar}>
               <span className='d-md-none d-lg-block '>02</span> CREW
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to='/technology' className='nav-text d-flex'>
+            <NavLink to='/technology' className='nav-text d-flex' onClick={toggleNavbar}> 
               <span className='d-md-none d-lg-block '>03</span> TECHNOLOGY
             </NavLink>
           </NavItem>
