@@ -26,13 +26,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    a,
-    a:hover,
-    a:focus,
-    a:active {
+    border: none;
+    text-decoration: none;
+    &:hover,
+    :focus,
+    :active {
+      background-color: $light-color;
+      box-shadow: 0px 0px 0px 29px rgb(34, 34, 34);
+    }
+    a {
       text-decoration: none;
-      color: inherit;
+      color: $dark-color;
+      background-color: $light-color;
+      &:hover,
+      :focus,
+      :active {
+        color: $dark-color;
+        background-color: $light-color;
+        box-shadow: 0px 0px 0px 29px rgb(255, 255, 255)
+      }
     }
   }
 }
@@ -45,14 +57,17 @@
     background-position: center;
     background-size: cover;
     .overlay {
+      padding-top: 3rem;
     }
     .hero-btn {
       height: 242px;
       width: 242px;
+      &:hover {
+        box-shadow: 0px 0px 0px 47px rgb(34, 34, 34);
+      }
     }
   }
 }
-
 // Desktop
 @media (min-width: 992px) {
   .hero {
@@ -67,6 +82,9 @@
     .hero-btn {
       height: 274px;
       width: 274px;
+      &:hover {
+        box-shadow: 0px 0px 0px 88px rgb(34, 34, 34);
+      }
     }
   }
 }
