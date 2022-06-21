@@ -83,7 +83,10 @@
     background: url('../../public/assets/crew/background-crew-desktop.jpg');
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 100vh;;
+    height: 100vh;
+    .sub-header {
+      margin-top: 5rem;
+    }
     .crew-body {
       display: flex;
       flex-direction: row-reverse;
@@ -106,7 +109,7 @@
     .crew-content {
       position: absolute;
       left: 6rem;
-      top: 25rem;
+      top: 20rem;
       display: flex;
       flex-direction: column-reverse;
       align-items: flex-start;
