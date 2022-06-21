@@ -18,7 +18,8 @@
 @media (min-width: 769px) and (max-width: 991px) {
   .header-box {
     .heading-5 {
-      font-size: $head-5;
+      font-size: $subhead-3;
+      margin-bottom: -2rem;
     }
     .heading-1 {
       font-size: $head-1;
@@ -28,6 +29,7 @@
     }
   }
 }
+
 
 // Desktop
 @media (min-width: 992px) {
