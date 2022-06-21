@@ -17,10 +17,10 @@ const Crew = () => {
 
         <div className='col col-lg-5 crew-content'>
         <div className='dot-navbar'>
-            <DotNavbar url='/commander' />
+            <DotNavbar url='/commander'   />
             <DotNavbar url='/flightEngineer' />
-            <DotNavbar url='/missionSpecialist' />
-            <DotNavbar url='/pilot' />
+            <DotNavbar url='/missionSpecialist'/>
+            <DotNavbar url='/pilot'  />
           </div>
 
           <div className='col-lg-5 header-box'>

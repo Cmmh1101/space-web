@@ -1,5 +1,5 @@
-import { Nav, NavItem, NavLink } from 'reactstrap';
-// import { NavLink } from 'react-router-dom';
+import { Nav, NavItem } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 interface Props {
   url: string;
@@ -12,7 +12,14 @@ const DotNavbar = ({ url, customClass, content }: Props) => {
     <div className='dot-navbar'>
       <Nav pills className='nav'>
         <NavItem className='nav-item'>
-          <NavLink href={url} className='dot'></NavLink>
+          <NavLink
+            to={url}
+            className={({ isActive }) =>
+              isActive ? 'dot-nav active' : 'dot-nav'
+            }
+          >
+            {content}
+          </NavLink>
         </NavItem>
       </Nav>
     </div>
