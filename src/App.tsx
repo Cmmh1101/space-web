@@ -22,7 +22,7 @@ function App() {
     <div className='App'>
       <Router>
         <Container fluid className='p-0 m-0'>
-          {/* <Navbar /> */}
+     
           <MainNavbar />
           <main className='main'>
             <Routes>

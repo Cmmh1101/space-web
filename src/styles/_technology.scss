@@ -7,6 +7,7 @@
   flex-direction: column;
   height: 100vh;
   .sub-header {
+    // margin-top: 2rem;
   }
   .technology-body {
     .image {
@@ -26,18 +27,21 @@
         display: none;
       }
     }
-    .header-box {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 3rem;
-      .content {
-        max-width: 315px;
-        line-height: 26px;
-        font-size: 15px;
-      }
+    .technology-content {
+
+      .header-box {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 3rem;
+        .content {
+          max-width: 315px;
+          line-height: 26px;
+          font-size: 15px;
+        }
+    }
     }
   }
 }
@@ -62,12 +66,14 @@
           object-fit: cover;
         }
       }
+.technology-content {
 
-      .header-box {
-        .content {
-          max-width: 440px;
-        }
-      }
+  .header-box {
+    .content {
+      max-width: 440px;
+    }
+  }
+}
     }
   }
 }
@@ -80,6 +86,7 @@
     background-size: cover;
     overflow: hidden;
     .sub-header {
+      margin-top: 3rem;
     }
     .technology-body {
       display: flex;
@@ -99,6 +106,7 @@
         }
       }
     }
+    
     .technology-content {
       display: flex;
       flex-direction: row;
@@ -106,6 +114,10 @@
       justify-content: left;
       text-align: left;
       margin-left: 8rem;
+      .num-navbar {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+      }
       .header-box {
         margin-top: 3.8rem;
         min-width: 444px;
@@ -119,5 +131,6 @@
         }
       }
     }
+    
   }
 }

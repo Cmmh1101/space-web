@@ -11,7 +11,7 @@ const NumberedNavbar = ({ url, number }: Props) => {
     <div className='num-navbar'>
       <Nav pills className='nav'>
         <NavItem className='nav-item'>
-          <NavLink to={url} className='heading'>
+          <NavLink to={url} className={({isActive}) => isActive ? 'heading active' : 'heading'}>
             {number}
           </NavLink>
         </NavItem>
