@@ -2,6 +2,7 @@ import SubHeader from '../components/SubHeader';
 import DotNavbar from '../components/DotNavbar';
 import HeaderBox from '../components/HeaderBox';
 
+
 const Crew = () => {
   return (
     <div className='crew'>
@@ -15,8 +16,8 @@ const Crew = () => {
         </div>
 
         <div className='col col-lg-5 crew-content'>
-          <div className='dot-navbar'>
-          <DotNavbar url='/commander' />
+        <div className='dot-navbar'>
+            <DotNavbar url='/commander' />
             <DotNavbar url='/flightEngineer' />
             <DotNavbar url='/missionSpecialist' />
             <DotNavbar url='/pilot' />
@@ -37,3 +38,4 @@ const Crew = () => {
   );
 };
 export default Crew;
+
